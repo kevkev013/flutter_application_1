@@ -24,4 +24,8 @@ class HomeController extends GetxController {
   void navigateToSendTestMessage() {
     Get.toNamed(Routes.sendTestMessage);
   }
+
+  void navigateToPromoPage() {
+    Get.toNamed(Routes.promoPage);
+  }
 }

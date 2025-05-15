@@ -39,6 +39,17 @@ class HomePage extends GetView<HomeController> {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
+              onPressed: controller.navigateToPromoPage,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepOrange,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                textStyle: const TextStyle(fontSize: 16),
+              ),
+              child: const Text('Special Offers'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
               onPressed: controller.navigateToLogin,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,

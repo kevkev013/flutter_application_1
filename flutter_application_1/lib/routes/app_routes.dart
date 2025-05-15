@@ -3,4 +3,5 @@ abstract class Routes {
   static const home = '/home';
   static const knowledgeBase = '/knowledge-base';
   static const sendTestMessage = '/send-test-message';
+  static const promoPage = '/promo-page';
 }

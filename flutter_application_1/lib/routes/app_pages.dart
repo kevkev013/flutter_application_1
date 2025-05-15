@@ -3,10 +3,12 @@ import '../modules/home/views/home_page.dart';
 import '../modules/login/views/login_page.dart';
 import '../modules/knowledge_base/views/knowledge_base_page.dart';
 import '../modules/send_test_message/views/send_test_message_page.dart';
+import '../modules/promo_page/views/promo_page_view.dart';
 import '../modules/home/controllers/home_controller.dart';
 import '../modules/login/controllers/login_controller.dart';
 import '../modules/knowledge_base/bindings/knowledge_base_binding.dart';
 import '../modules/send_test_message/bindings/send_test_message_binding.dart';
+import '../modules/promo_page/bindings/promo_page_binding.dart';
 import 'app_routes.dart';
 
 class AppPages {
@@ -34,6 +36,11 @@ class AppPages {
       name: Routes.sendTestMessage,
       page: () => const SendTestMessagePage(),
       binding: SendTestMessageBinding(),
+    ),
+    GetPage(
+      name: Routes.promoPage,
+      page: () => const PromoPageView(),
+      binding: PromoPageBinding(),
     ),
   ];
 }
